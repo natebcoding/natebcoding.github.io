@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube Playlist App</title>
+    <title onclick="changeColorMode('white')">Youtube Playlist App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,9 +18,16 @@
             </div>
     </div>
 
+    <button onclick="loadPlaylist('PL4ityD-Ex7e3f1OrLlhYPLkqi0xBTw1iE')">
+        <span class="button_top">Relaxing</span>
+    </button>
+    <button onclick="loadPlaylist('PL4ityD-Ex7e0IDNuVY3L2aNWDg0fkUYHz')">
+        <span class="button_top">White Noise</span>
+    </button>
     <button onclick="loadPlaylist('PL4ityD-Ex7e0tVAApEh_0IHQA8ejOtq4j')">
-        <span class="button_top">Gaming Nostalgia</span>
+        <span class="button_top">Gaming (2010s)</span>
       </button>
+
       <script src="script.js"></script>     
 </body>
 </html>
