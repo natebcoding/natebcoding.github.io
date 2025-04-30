@@ -17,3 +17,18 @@ document.getElementById('password').addEventListener('input', function() {
         document.getElementById('codingSection').style.display = 'none';
     }
 });
+
+
+function resizePlayer(size) {
+    const player = document.getElementById('player');
+    if (size === 'small') {
+        player.style.width = '300px';
+        player.style.height = '200px';
+    } else if (size === 'medium') {
+        player.style.width = '640px';
+        player.style.height = '360px';
+    } else if (size === 'large') {
+        player.style.width = '1080px';
+        player.style.height = '640px';
+    }
+}

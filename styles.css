@@ -33,15 +33,18 @@ body {
 }
 
 .tv-screen {
-  width: 640px;
-  height: 390px;
-  overflow: hidden;
-  border-radius: 5px;
+  width: auto; 
+    height: auto; 
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #player {
-  width: 100%;
-  height: 100%;
+  width: 100%; 
+  height: 100%; 
   border: none;
   display: block;
 }
@@ -98,14 +101,40 @@ body {
 }
 
 #password:focus {
-    border-color: #007BFF; /* Blue border on focus */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glow effect */
+    border-color: #007BFF; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
 }
 
 #password::placeholder {
-    color: #aaa; /* Placeholder text color */
+    color: #aaa; 
     font-style: italic;
 }
+
+#resizer {
+  padding: 2px;
+  font-size: 16px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+#resizer:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#playerResizer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+/* Responsive Styles for Mobile and what not */
 
 @media (max-width: 768px) {
   .tv-screen {
