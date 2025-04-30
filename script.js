@@ -33,16 +33,4 @@ function resizePlayer(size) {
     }
 }
 
-const player = document.getElementById('player');
 
-player.addEventListener('play', async () => {
-    if ('pictureInPictureEnabled' in document) {
-        try {
-            await player.requestPictureInPicture();
-        } catch (error) {
-            console.error('Error entering Picture-in-Picture:', error);
-        }
-    } else {
-        console.warn('Picture-in-Picture is not supported in this browser.');
-    }
-});
