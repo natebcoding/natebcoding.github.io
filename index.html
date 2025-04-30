@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title onclick="changeColorMode('white')">Youtube Playlist App</title>
+   
+    <title>ZuTube</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,6 +19,8 @@
             </div>
     </div>
 
+<div>
+    <h2>Main Playlists</h2>
     <button onclick="loadPlaylist('PL4ityD-Ex7e3f1OrLlhYPLkqi0xBTw1iE')">
         <span class="button_top">Relaxing</span>
     </button>
@@ -27,7 +30,42 @@
     <button onclick="loadPlaylist('PL4ityD-Ex7e0tVAApEh_0IHQA8ejOtq4j')">
         <span class="button_top">Gaming (2010s)</span>
       </button>
+    
 
-      <script src="script.js"></script>     
+
+</div>
+
+<div>
+<h2>Enter Password to Unlock Secret Playlists</h2>
+<input type="password" id="password" placeholder="Enter Password">
+</div>
+
+
+<div id="gameDevSection" style="display: none;">
+<h2>Game Dev</h2>
+<button onclick="loadPlaylist('PL4ityD-Ex7e3EWMlYN6VEf1ajYLqHjx3m')">
+    <span class="button_top">Unity Tutorials</span>
+  </button>
+<button onclick="loadPlaylist('PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6')">
+    <span class="button_top">Brackey's Unity</span>
+  </button>
+<button onclick="loadPlaylist('PLzDRvYVwl53vxdAPq8OznBAdjf0eeiipT')">
+    <span class="button_top">CodeMonkey</span>
+  </button>
+</div>
+
+<div id="codingSection" style="display: none;">
+<h2>Coding</h2>
+<button onclick="loadPlaylist('PLZPZq0r_RZON03iKBjYOsOKr1-TD7z2lH')">
+    <span class="button_top">BroCode Full</span>
+  </button>
+  
+
+
+</div>
+
+
+<script src="script.js"></script>  
+
 </body>
 </html>

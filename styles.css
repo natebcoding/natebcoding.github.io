@@ -10,9 +10,14 @@ body {
     min-height: 100vh;
   }
 
-
   h1 {
     font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2rem;
     margin-bottom: 20px;
     text-align: center;
   }
@@ -75,4 +80,41 @@ body {
   button:active .button_top {
     transform: translateY(0);
   }
-  
+
+  div h2 + input#password {
+    display: block;
+    margin: 20px auto;
+  }
+
+  #password {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 30px;
+    font-size: 16px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#password:focus {
+    border-color: #007BFF; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glow effect */
+}
+
+#password::placeholder {
+    color: #aaa; /* Placeholder text color */
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .tv-screen {
+      width: 100%;
+      height: auto;
+  }
+
+  button {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}
