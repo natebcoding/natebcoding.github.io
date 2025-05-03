@@ -33,4 +33,16 @@ function resizePlayer(size) {
     }
 }
 
+function loadRandomPlaylist {
+    const playlists = [
+        'PL1A2B3C4D5E6F7G8H9I0J',
+        'PL1K2L3M4N5O6P7Q8R9S0T',
+        'PL1U2V3W4X5Y6Z7A8B9C0D'
+    ];
+    const randomIndex = Math.floor(Math.random() * playlists.length);
+    const selectedPlaylist = playlists[randomIndex];
+
+    player.src = `https://www.youtube.com/embed/videoseries?list=${selectedPlaylist}&autoplay=1`;
+}
+
 
